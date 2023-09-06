@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+
+body {
+  background-image: url('https://img.freepik.com/free-photo/white-fabric-texture_1154-645.jpg');
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Tangerine', cursive;
+  font-size: 400%
+}
+
+h2 {
+  text-align: center;
+}
+
+.paintings {
+  text-align: center;
+}
+
+.painting-1 {
+  text-align: center;
+  display: inline-block;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 30%;
+}
+
+.painting-2 {
+  text-align: center;
+  display: inline-block;
+  margin-left: 5%;
+  margin-right: 5s%;
+  width: 30%;
+}
+
+.painting-3 {
+  text-align: center;
+  margin: 5%;
+  width: 60%;
+}
+
+.painting-4 {
+  width: 20%;
+}
+
+.bio {
+  font-size: 150%;
+  font-family: monospace;
+  margin: 2%;
+  text-align: justify;
+}
+
+.portrait {
+  width: 10%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-1 {
+  text-align: justify;
+  font-size: 150%;
+  display: inline-block;
+  font-family: monospace;
+  margin: 2%;
+  float: left;
+  width: 45%
+}
+
+.text-2 {
+  text-align: justify;
+  font-size: 150%;
+  display: inline-block;
+  font-family: monospace;
+  margin: 2%;
+  float: right;
+  width: 45%
+}
+
+.text-3 {
+  clear:both;
+  display: block;
+}
+
+li {
+  font-size: 150%;
+  font-family: monospace;
+}
+
+.video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.paintingList {
+  text-align: center;
+}
+
+table, tr, td {
+  font-size: 130%;
+  text-align: center;
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+.signature p a img{
+  display: block;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
