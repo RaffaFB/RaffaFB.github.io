@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fla's Clock</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/cwdc/mainPage/LCG.css" />
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Tangerine:wght@700&display=swap');
+
+            :root {
+                --cgrena: #8b2439;
+                --cgreen: #446127;
+                --corange: orange;
+                --cwhite: white;
+                --cwhite1: #8b2439;
+                --cwhite2: #446127;
+                --cwhite3: #446127;
+            }
+            body {
+                margin: 20px;
+            }
+            #clock,
+            #handles {
+                border: 5px solid #8b2439;
+                padding: 20px;
+                margin: 0px;
+            }
+            #flu {
+
+                width: 512px;
+                font-family: 'DM Serif Display', serif;
+                text-align: center;
+                font-size: 30px;
+            }
+            #container {
+                position: relative;
+                height: 512px;
+                margin: 0px;
+                margin-bottom: 50px;
+            }
+            canvas {
+                position: absolute;
+            }
+            #handles {
+                z-index: 2;
+            }
+            #clock {
+                background-color: antiquewhite;
+                z-index: 1;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p id="flu">
+            <a href="https://www.flamengo.com.br/"
+                >Clube de regatas do Flamengo</a
+            >
+        </p>
+
+        <div id="container">
+            <canvas id="clock" width="512" height="512">
+                Please upgrade your browser.
+            </canvas>
+            <canvas id="handles" width="512" height="512">
+                Please upgrade your browser.
+            </canvas>
+        </div>
+        <br />
+
+        <script src="suncalc.js"></script>
+        <script src="clock.js"></script>
+        <script src="date.js"></script>
+        <script>
+            document.querySelector(
+                "#Rivelino"
+            ).innerHTML += `(há ${elapsedYears("1975-06-10")} anos atrás)`;
+            document.querySelector("#Renato").innerHTML += `(há ${elapsedYears(
+                "1995-06-25"
+            )} anos atrás)`;
+            document.querySelector("#Cano").innerHTML += `(há ${elapsedYears(
+                "2023-02-12"
+            )} anos atrás)`;
+        </script>
+    </body>
+</html>
